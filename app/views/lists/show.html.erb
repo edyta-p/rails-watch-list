@@ -2,9 +2,9 @@
   <h1><%= @list.name %></h1>
   <ul>
     <% @list.movies.each do |elem| %>
-    <li>
-      <%= elem.title %>
-    </li>
+      <li>
+        <%= elem.title %>
+      </li>
     <% end %>
   </ul>
   <%= link_to 'add a movie', new_list_bookmark_path(@list) %>
